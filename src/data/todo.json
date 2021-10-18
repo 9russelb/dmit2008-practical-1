@@ -1,0 +1,56 @@
+[
+    {
+        "id": "000001",
+        "category": "Health / Self-Care",
+        "title": "Dental Appointment",
+        "isComplete": false,
+        "startDate": "Saturday, October 23, 2021",
+        "startTime": "10:00 AM",
+        "endDate": "Saturday, October 23, 2021",
+        "endTime": "12:00 AM"
+    },
+
+    {
+        "id": "000002",
+        "category": "School",
+        "title": "DMIT2008 - Lab 1",
+        "isComplete": false,
+        "startDate": "Monday, October 18, 2021",
+        "startTime": "12:00 AM",
+        "endDate": "Friday, October 22, 2021",
+        "endTime": "11:59 PM"
+    },
+
+    {
+        "id": "000003",
+        "category": "Social",
+        "title": "Group hangout",
+        "isComplete": true,
+        "startDate": "Saturday, October 23, 2021",
+        "startTime": "12:00 PM",
+        "endDate": "Saturday, October 23, 2021",
+        "endTime": "7:00 PM"
+    },
+
+    {
+        "id": "000004",
+        "category": "Home",
+        "title": "Get Groceries",
+        "isComplete": true,
+        "startDate": "Tuesday, October 19, 2021",
+        "startTime": "1:00 PM",
+        "endDate": "Tuesday, October 19, 2021",
+        "endTime": "3:00 PM"
+    },
+
+    {
+        "id": "000005",
+        "category": "Event",
+        "title": "______'s birthday",
+        "isComplete": true,
+        "startDate": "Tuesday, October 26, 2021",
+        "startTime": "12:00AM",
+        "endDate": "Tuesday, October 26, 2021",
+        "endTime": "11:59PM"
+    }
+]
