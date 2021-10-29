@@ -1,6 +1,6 @@
 {
   "name": "workflow",
-  "git":"INSERT URL HERE",
+  "git":"https://github.com/9russelb/dmit2008-practical-1",
   "version": "1.0.0",
   "description": "Fewder is a simple Front End Framework for developing Web App's using modules",
   "directories": {
