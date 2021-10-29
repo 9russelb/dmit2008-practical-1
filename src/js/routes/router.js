@@ -1,14 +1,17 @@
 import home from "./../pages/home";
 import toDoPage from "./../pages/toDoPage";
-import pageNotFound from "./../pages/pageNotFound";
+import notFound from "./../pages/pageNotFound"
+
+
 
 const Router = (pathname) => {
 
     const routes = {
         "/": home(),
-        "/todo": toDoPage(),
-        "404": pageNotFound()
+        "/todo": toDoPage()
     }
+
+    const isValidRoute = Object.keys(routes).find(key => key===pathname)
 
     //Loading and unloading pages into the div app
     const app = document.querySelector('#app')
@@ -19,10 +22,15 @@ const Router = (pathname) => {
         pathname,
         window.location.origin + pathname
     )
-
-    app.appendChild(routes[window.location.pathname])
+    
+    if (isValidRoute === undefined) {
+        app.appendChild(notFound())
+    }
+    else {
+        app.appendChild(routes[window.location.pathname])
+    }
+    
 
 }
 
 export default Router
-export {routes}

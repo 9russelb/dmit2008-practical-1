@@ -1,5 +1,6 @@
 {
   "name": "workflow",
+  "git":"INSERT URL HERE",
   "version": "1.0.0",
   "description": "Fewder is a simple Front End Framework for developing Web App's using modules",
   "directories": {
@@ -8,7 +9,9 @@
   "default": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx parcel src/index.html",
+    "start": "npm run static && npm run dev",
+    "static": "mkdir dist && cp -R src/static/data dist/data",
+    "dev": "npx parcel src/index.html",
     "build": "npx parcel build src/index.html",
     "clean:dev": "rm -rf .parcel-cache dist",
     "clean:git": "rm -rf .parcel-cache dist  node_modules"

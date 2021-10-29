@@ -1,15 +1,17 @@
-import logo from "./../components/logo/logo";
 import heading from "./../components/header/header";
-import tagline from "./../components/tagline/tagline"
 import link from "./../components/link/link";
 
-const home = function() {
+const notFound = function() {
     const header = document.createElement('header')
-    header.classList.add('ui-page-header')
+    header.classList.add('notfound-page-header')
 
-    
+    const notFoundTitle = heading('404: Page not found', 'notfound-title')
+    const notFoundLink = link('Take me back!', '/todo', 'notfound-link')
+
+    header.append(notFoundTitle)
+    header.append(notFoundLink)
 
     return header
 }
 
-export default home
+export default notFound

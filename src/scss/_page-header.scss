@@ -1,8 +1,25 @@
-.ui-page-header{
+.ui-header{
     padding: 3rem;
     text-align: center;
 
-    svg{
+    svg {
         width: 25%;
+    }
+
+    h1{
+        font-weight: 600;
+        font-size: 5rem;
+    }
+
+    .home-tagline{
+        margin-bottom: 5rem;
+    }
+
+    .home-link{
+        background-color: #656D4A;
+        padding: 0.5rem;
+        color: white;
+        border-radius: 1rem;
+        border-color: #414833;
     }
 }

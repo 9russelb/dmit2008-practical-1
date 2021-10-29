@@ -1,2 +1,10 @@
 @use 'reboot';
-@use 'page-header'
+@use 'page-header';
+@use 'todo-page';
+@use 'notfound-page';
+
+//  Default styles
+body{
+    background-color: #C2C5AA;
+    color: #333D29;
+}

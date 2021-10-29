@@ -5,12 +5,12 @@ import link from "./../components/link/link";
 
 const home = function() {
     const header = document.createElement('header')
-    header.classList.add('ui-page-header')
+    header.classList.add('ui-header')
 
     const icon = logo()
     const homeTitle = heading('Atom Tasks', 'ui-title')
-    const homeTagline = tagline('Break your everyday life down into smaller tasks')
-    const homeLink = link('Atomize your day', '/todo')
+    const homeTagline = tagline('Break your everyday life down into smaller tasks', 'home-tagline')
+    const homeLink = link('Atomize your day', '/todo', 'home-link')
     header.append(icon)
     header.append(homeTitle)
     header.append(homeTagline)
