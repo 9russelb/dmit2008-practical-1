@@ -1,8 +1,8 @@
-#Welcome to Atom Tasks
+# Welcome to Atom Tasks
 
-#This is a vanilla js to-do app mockup
+# This is a vanilla js to-do app mockup
 
-#View live: [NETLIFY LINK]
+# View live: [[NETLIFY LINK]](https://musing-hawking-c845d5.netlify.app)
 
 #How to start it locally:
 1. Install npm
