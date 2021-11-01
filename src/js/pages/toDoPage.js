@@ -1,9 +1,9 @@
 import logo from "./../components/logo/logo";
 import heading from "./../components/header/header";
 import tagline from "./../components/tagline/tagline";
-import { dataFetcher } from "../utils/dataFetcher";
 import { getStore } from "../redux/store"
 import todoTask from "../components/cards/todoCard";
+import link from "../components/link/link";
 
 
 
@@ -29,7 +29,9 @@ const toDoPage = function() {
 
     header.append(todoSection)
     
-    
+    //add task button
+    const todoAdd = link('Add Task', '#', 'todo-add')
+    header.append(todoAdd)
 
     return header
 }
