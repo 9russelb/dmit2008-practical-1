@@ -17,3 +17,5 @@ function reducer (action) {
             return "add employee";
     }
 }
+
+export default reducer
