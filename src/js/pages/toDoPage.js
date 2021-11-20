@@ -4,11 +4,18 @@ import tagline from "./../components/tagline/tagline";
 import { getStore } from "../redux/store"
 import todoTask from "../components/cards/todoCard";
 import link from "../components/link/link";
+import Router from "../routes/router";
 
 
 
 const toDoPage = function() {
     const todoList = getStore();
+
+    //  Event listeners for edit, delete, and add
+    function onDelete(e) {
+        const taskId = {id:e.currentTarget.dataset.key}
+        Router('/delete', taskId)
+    }
 
     const header = document.createElement('header')
     header.classList.add('ui-header')
@@ -26,6 +33,13 @@ const toDoPage = function() {
 
     const todoItems = todoList.map(todo => todoTask(todo))
     todoItems.forEach(element => todoSection.append(element))
+
+    //  Add event listeners for edit and delete buttons
+    todoItems.forEach(element => {
+        element.querySelector('#delete').addEventListener('click', onDelete)
+
+        todoSection.append(element)
+    })
 
     header.append(todoSection)
     

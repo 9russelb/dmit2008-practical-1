@@ -1,6 +1,7 @@
 import home from "./../pages/home";
 import toDoPage from "./../pages/toDoPage";
 import notFound from "./../pages/pageNotFound"
+import deletePage from "../pages/delete";
 
 
 
@@ -8,7 +9,8 @@ const Router = (pathname) => {
 
     const routes = {
         "/": home(),
-        "/todo": toDoPage()
+        "/todo": toDoPage(),
+        "/delete": deletePage()
     }
 
     const isValidRoute = Object.keys(routes).find(key => key===pathname)
