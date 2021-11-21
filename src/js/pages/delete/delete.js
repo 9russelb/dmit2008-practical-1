@@ -1,6 +1,6 @@
 import makeElement from "~/src/js/utils/makeElement"
 import button from "../../components/button"
-import Router from "../../routes/router"
+import { Router } from "../../routes/router"
 import { getStore } from "../../redux/store"
 import reducer from "../../redux/reducers"
 import logo from "./../../components/logo/logo";
@@ -9,6 +9,9 @@ const cancelButton = button("cancel")
 const deleteButton = button("delete")
 
 const deletePage = function(props) {
+
+    console.log(props)
+
     const page = document.createElement('div');
     page.classList.add('delete-page')
 

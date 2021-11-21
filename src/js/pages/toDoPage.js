@@ -4,7 +4,7 @@ import tagline from "./../components/tagline/tagline";
 import { getStore } from "../redux/store"
 import todoTask from "../components/cards/todoCard";
 import link from "../components/link/link";
-import Router from "../routes/router";
+import { Router } from "../routes/router";
 
 
 

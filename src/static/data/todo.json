@@ -1,6 +1,5 @@
 [
     {
-        "id": "000001",
         "category": "Health / Self-Care",
         "title": "Dental Appointment",
         "isComplete": false,
@@ -11,7 +10,6 @@
     },
 
     {
-        "id": "000002",
         "category": "School",
         "title": "DMIT2008 - Lab 1",
         "isComplete": false,
@@ -22,7 +20,6 @@
     },
 
     {
-        "id": "000003",
         "category": "Social",
         "title": "Group hangout",
         "isComplete": true,
@@ -33,7 +30,6 @@
     },
 
     {
-        "id": "000004",
         "category": "Home",
         "title": "Get Groceries",
         "isComplete": true,
@@ -44,7 +40,6 @@
     },
 
     {
-        "id": "000005",
         "category": "Event",
         "title": "______'s birthday",
         "isComplete": true,

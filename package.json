@@ -1,6 +1,6 @@
 {
   "name": "workflow",
-  "git":"https://github.com/9russelb/dmit2008-practical-1",
+  "git": "https://github.com/9russelb/dmit2008-practical-1",
   "version": "1.0.0",
   "description": "Fewder is a simple Front End Framework for developing Web App's using modules",
   "directories": {
@@ -26,6 +26,7 @@
     "sass": "^1.40.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2"
   }
 }
