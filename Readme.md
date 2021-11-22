@@ -12,5 +12,5 @@
 
 # Known bugs / issues
 1. Styling improvements - From practical 1 feedback
-2. Editing tasks incomplete
-3. Adding tasks incomplete
+2. Add and edit CRUD functionalities incomplete
+3. Add redirect not working

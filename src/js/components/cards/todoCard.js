@@ -9,8 +9,8 @@ const todoTask = function ({id, category, title, isComplete}) {
             <p>${isComplete}</p>
         </li>
         <div class="todo-buttons">
-            <button id="edit" data-key="${id}">Edit</a>
-            <button id="delete" data-key="${id}">Delete</a>
+            <button id="edit" data-key="${id}">Edit</button>
+            <button id="delete" data-key="${id}">Delete</button>
         </div>
     </div>
     `

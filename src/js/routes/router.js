@@ -2,19 +2,23 @@ import home from "./../pages/home";
 import toDoPage from "./../pages/toDoPage";
 import notFound from "./../pages/pageNotFound"
 import deletePage from "../pages/delete";
+import editPage from "../pages/edit";
+import addPage from "../pages/add";
 
 
-const routes = {
-    "/": home,
-    "/todo": toDoPage,
-    "/delete": deletePage,
-    "/*": notFound
-}
+const Router = (pathname) => {
 
-const Router = function (pathname, params=null) {
+    const routes = {
+        "/": home(),
+        "/todo": toDoPage(),
+        "/delete": deletePage(),
+        "/edit": editPage(),
+        "/add": addPage()
+    }
 
-    const isValidRoute = Object.keys(routes).find(key => key === pathname)
+    const isValidRoute = Object.keys(routes).find(key => key===pathname)
 
+    //Loading and unloading pages into the div app
     const app = document.querySelector('#app')
     app.innerHTML=''
 
@@ -24,13 +28,14 @@ const Router = function (pathname, params=null) {
         window.location.origin + pathname
     )
     
-    if (isValidRoute === undefined || isValidRoute==='') {
+    if (isValidRoute === undefined) {
         app.appendChild(notFound())
     }
     else {
-        app.appendChild(routes[isValidRoute](params))
+        app.appendChild(routes[window.location.pathname])
     }
+    
 
 }
 
-export {Router}
+export { Router }

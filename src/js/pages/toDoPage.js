@@ -17,6 +17,14 @@ const toDoPage = function() {
         Router('/delete', taskId)
     }
 
+    function onEdit(e) {
+        Router('/edit')
+    }
+
+    function onAdd(e) {
+        Router('/add')
+    }
+
     const header = document.createElement('header')
     header.classList.add('ui-header')
 
@@ -35,8 +43,15 @@ const toDoPage = function() {
     todoItems.forEach(element => todoSection.append(element))
 
     //  Add event listeners for edit and delete buttons
+    //  Delete button
     todoItems.forEach(element => {
         element.querySelector('#delete').addEventListener('click', onDelete)
+
+        todoSection.append(element)
+    })
+    //  Edit button
+    todoItems.forEach(element => {
+        element.querySelector('#edit').addEventListener('click', onEdit)
 
         todoSection.append(element)
     })
@@ -46,6 +61,8 @@ const toDoPage = function() {
     //add task button
     const todoAdd = link('Add Task', '#', 'todo-add')
     header.append(todoAdd)
+    //  Add task button event listener
+    //element.querySelector('.todo-add').addEventListener('click', onAdd)
 
     return header
 }
